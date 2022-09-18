@@ -1,0 +1,24 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Testing out monorepo setup with turborepo build system",
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
+  },
+  "keywords": [
+    "monorepo"
+  ],
+  "author": "Abdullah Ajmal",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.4.7"
+  },
+  "workspaces": [
+    "shared/*",
+    "apps/*"
+  ],
+  "private": true
+}
